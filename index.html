@@ -12,6 +12,9 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
     <!-- akhir my css -->
@@ -71,16 +74,16 @@
 
     <!-- about -->
     <section id="About">
-      <div class="container">
+      <div class="container" data-aos="fade-in" data-aos-delay="50">
         <div class="row text-center mb-3">
           <h2>About Me</h2>
         </div>
       </div>
       <div class="row justify-content fs-5 text-center m-lg-4">
-        <div class="col justify-content mb-6">
+        <div class="col justify-content mb-6" data-aos="fade-right" data-aos-duration="500">
           <p>Simple person \ open minded \ workholic \ learning by doing \ scaling up skill.</p>
         </div>
-        <div class="col mb-2">
+        <div class="col justify-content mb-6" data-aos="fade-left" data-aos-delay="200">
           <p>kontemplasi > ukur kemampuan > perhitungkan risiko > putuskan tindakan > evaluasi > tetapkan solusi.</p>
         </div>
       </div>
@@ -104,7 +107,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500">
               <img src="./img/projects/1.jpg" class="card-img-top" alt="1" />
               <div class="card-body">
                 <p class="card-text">
@@ -114,7 +117,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="./img/projects/2.jpg" class="card-img-top" alt="2" />
               <div class="card-body">
                 <p class="card-text">
@@ -124,7 +127,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="150">
               <img src="./img/projects/3.jpg" class="card-img-top" alt="3" />
               <div class="card-body">
                 <p class="card-text">
@@ -134,7 +137,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="./img/projects/4.jpg" class="card-img-top" alt="4" />
               <div class="card-body">
                 <p class="card-text">
@@ -144,7 +147,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="250">
               <img src="./img/projects/5.jpg" class="card-img-top" alt="5" />
               <div class="card-body">
                 <p class="card-text">
@@ -239,6 +242,12 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbwfJIXxxtsFLaCTnApivs6imBkEcaeTRNKMGnesziaCmJiGjlw9GvaK5ZWw-uRCX4GGUg/exec";
