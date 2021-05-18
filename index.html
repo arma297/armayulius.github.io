@@ -61,7 +61,7 @@
     <section class="jumbotron text-center">
       <img src="img/profile picture.png" alt="Arma Yulius" width="200" class="rounded-circle img-thumnail" />
       <h1 class="display-6">Arma Yulius</h1>
-      <p class="lead">Interesting \\ Graphic Design_Web Develop</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -245,9 +245,20 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 2000,
+      });
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 2, delay: 1.5, text: "Interesting \\ Graphic Design_Web Develop" });
+      gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-6", { duration: 1, y: "-100%", opacity: 0, ease: "back" });
+    </script>
     <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbwfJIXxxtsFLaCTnApivs6imBkEcaeTRNKMGnesziaCmJiGjlw9GvaK5ZWw-uRCX4GGUg/exec";
